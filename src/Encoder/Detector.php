@@ -11,7 +11,7 @@ namespace StupidDev\ViEncoder\Encoder;
 
 class Detector {
 	private static $patterns = [
-		Code::CHARSET_TCVN3        => '/\w­[¬íêîëì]|®[¸µ¹¶·Ê¾»Æ¼½ÌÑÎÏªÕÒÖÓÔÝ×ÞØÜãßäáâ«èåéæç¬íêîëìóïôñòøõùö]/u',
+		Code::CHARSET_TCVN3        => '/\w­[¬íêîëì]|[®]|[¸µ¹¶·Ê¾»Æ¼½ÌÑÎÏªÕÒÖÓÔÝ×ÞØÜãßäáâ«èåéæç¬íêîëìóïôñòøõùö]/u',
 		Code::CHARSET_VNI_WIN      => '/[öô][ùøïûõ]|[oa][ëùøïûõä]|ñ[aoeuôö][äàáåãùøïûõ]/iu',
 		Code::CHARSET_VIQR         => '/u[\+\*]o[\+\*]|dd[aoe][\(\^~\'`]|[aoe]\^[~`\'\.\?]|[uo]\+[`\'~\.\?]|a\([\'`~\.\?]/iu',
 		Code::CHARSET_UNICODE      => '/[Ạ-ỹ]/',
